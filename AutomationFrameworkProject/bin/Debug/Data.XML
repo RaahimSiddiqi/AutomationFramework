@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Automation>
+	<Execution>
+		<LoginWith_AllValidUser_ValidPassword_TC004>
+			<url>https://www.saucedemo.com/</url>
+			<username>standard_user</username>
+			<password>secret_sauce</password>
+		</LoginWith_AllValidUser_ValidPassword_TC004>
+
+		
+		<LoginWith_AllValidUser_ValidPassword_TC004>
+			<url>https://www.saucedemo.com/</url>
+			<username>problem_user</username>
+			<password>secret_sauce</password>
+		</LoginWith_AllValidUser_ValidPassword_TC004>
+
+		<LoginWith_AllValidUser_ValidPassword_TC004>
+			<url>https://www.saucedemo.com/</url>
+			<username>performance_glitch_user</username>
+			<password>secret_sauce</password>
+		</LoginWith_AllValidUser_ValidPassword_TC004>
+
+		<LoginWith_AllValidUser_ValidPassword_TC004>
+			<url>https://www.saucedemo.com/</url>
+			<username>visual_user</username>
+			<password>secret_sauce</password>
+		</LoginWith_AllValidUser_ValidPassword_TC004>
+	</Execution>
+</Automation>

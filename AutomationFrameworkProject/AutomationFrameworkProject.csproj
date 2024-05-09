@@ -135,10 +135,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Checkout.cs" />
     <Compile Include="CorePage.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="LoginPage.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="TestExecution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

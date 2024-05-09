@@ -1,0 +1,1494 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title></title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa  standard">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary"></span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">5/9/2024 4:08:22 PM</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>                                                 <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+                      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AddToCartMultipleItem_TC006</p>
+            <p class="text-sm">
+              <span>4:08:22 PM</span> / <span>11336.13 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">AddToCartMultipleItem_TC006</h5>
+                  <span class='badge badge-success'>5/9/2024 4:08:22 PM</span>
+                  <span class='badge badge-danger'>5/9/2024 4:08:33 PM</span>
+                  <span class='badge badge-default'>11336.13 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+                              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>4929.2</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="2">LoginPage</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+standard_userData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-28.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-28.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+secret_sauceData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-29.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-29.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-29.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-29.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1366.58</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="3">Inventory Page</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-31.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-31.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>317.94</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="4">Inventory Page</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-33.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-33.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AddToCartSingleItem_TC005</p>
+            <p class="text-sm">
+              <span>4:08:35 PM</span> / <span>11476.7 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">AddToCartSingleItem_TC005</h5>
+                  <span class='badge badge-success'>5/9/2024 4:08:35 PM</span>
+                  <span class='badge badge-danger'>5/9/2024 4:08:46 PM</span>
+                  <span class='badge badge-default'>11476.7 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+                              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>6629.86</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="6">LoginPage</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+standard_userData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-40.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-40.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+secret_sauceData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-41.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-41.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-42.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-42.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>323.75</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="7">Inventory Page</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-44.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-44.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>302.07</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="8">Inventory Page</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-46.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-46.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CheckOutItem_TC007</p>
+            <p class="text-sm">
+              <span>4:08:48 PM</span> / <span>15317.3 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">CheckOutItem_TC007</h5>
+                  <span class='badge badge-success'>5/9/2024 4:08:48 PM</span>
+                  <span class='badge badge-danger'>5/9/2024 4:09:03 PM</span>
+                  <span class='badge badge-default'>15317.3 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+                              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>3701.85</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="10">LoginPage</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+standard_userData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-54.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-54.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+secret_sauceData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-55.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-55.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-56.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-56.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>313.35</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="11">Inventory Page</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-58.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-58.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>3860.17</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="12">CheckoutPage</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:08 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-59.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-08-59.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-00.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-00.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+RaahimData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-00.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-00.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+SiddiqiData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-00.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-00.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+123456Data Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-00.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-00.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-01.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-01.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-02.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-02.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginWith_AllValidUser_ValidPassword_TC004</p>
+            <p class="text-sm">
+              <span>4:09:09 PM</span> / <span>3532.46 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">LoginWith_AllValidUser_ValidPassword_TC004</h5>
+                  <span class='badge badge-success'>5/9/2024 4:09:09 PM</span>
+                  <span class='badge badge-danger'>5/9/2024 4:09:12 PM</span>
+                  <span class='badge badge-default'>3532.46 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+                              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1511.79</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="14">LoginPage</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+standard_userData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-12.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-12.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+secret_sauceData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-12.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-12.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-12.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-12.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginWith_AllValidUser_ValidPassword_TC004</p>
+            <p class="text-sm">
+              <span>4:09:13 PM</span> / <span>8734.88 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">LoginWith_AllValidUser_ValidPassword_TC004</h5>
+                  <span class='badge badge-success'>5/9/2024 4:09:13 PM</span>
+                  <span class='badge badge-danger'>5/9/2024 4:09:22 PM</span>
+                  <span class='badge badge-default'>8734.88 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+                              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>3555.45</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="16">LoginPage</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+problem_userData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-20.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-20.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+secret_sauceData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-21.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-21.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-21.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-21.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginWith_AllValidUser_ValidPassword_TC004</p>
+            <p class="text-sm">
+              <span>4:09:22 PM</span> / <span>12796.53 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">LoginWith_AllValidUser_ValidPassword_TC004</h5>
+                  <span class='badge badge-success'>5/9/2024 4:09:22 PM</span>
+                  <span class='badge badge-danger'>5/9/2024 4:09:35 PM</span>
+                  <span class='badge badge-default'>12796.53 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+                              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>10274.12</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="18">LoginPage</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+performance_glitch_userData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-28.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-28.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+secret_sauceData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-29.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-29.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-34.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-34.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginWith_AllValidUser_ValidPassword_TC004</p>
+            <p class="text-sm">
+              <span>4:09:35 PM</span> / <span>7766.42 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">LoginWith_AllValidUser_ValidPassword_TC004</h5>
+                  <span class='badge badge-success'>5/9/2024 4:09:35 PM</span>
+                  <span class='badge badge-danger'>5/9/2024 4:09:43 PM</span>
+                  <span class='badge badge-default'>7766.42 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+                              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>3055.71</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="20">LoginPage</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+visual_userData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-42.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-42.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+secret_sauceData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-42.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-42.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-42.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-42.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginWith_InvalidUser_InvalidPassword_TC003</p>
+            <p class="text-sm">
+              <span>4:09:44 PM</span> / <span>4473.1 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">LoginWith_InvalidUser_InvalidPassword_TC003</h5>
+                  <span class='badge badge-success'>5/9/2024 4:09:44 PM</span>
+                  <span class='badge badge-danger'>5/9/2024 4:09:48 PM</span>
+                  <span class='badge badge-default'>4473.1 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+                              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1577.43</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="22">LoginPage</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+incorrect_userData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-47.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-47.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+incorrect_sauceData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-48.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-48.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-48.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-48.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginWith_InvalidUser_ValidPassword_TC002</p>
+            <p class="text-sm">
+              <span>4:09:48 PM</span> / <span>8984.23 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">LoginWith_InvalidUser_ValidPassword_TC002</h5>
+                  <span class='badge badge-success'>5/9/2024 4:09:48 PM</span>
+                  <span class='badge badge-danger'>5/9/2024 4:09:57 PM</span>
+                  <span class='badge badge-default'>8984.23 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+                              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>3537.77</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="24">LoginPage</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+incorrect_userData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-55.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-55.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+secret_sauceData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-57.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-57.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:09 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-57.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-09-57.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginWith_ValidUser_ValidPassword_TC001</p>
+            <p class="text-sm">
+              <span>4:09:58 PM</span> / <span>3503.47 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">LoginWith_ValidUser_ValidPassword_TC001</h5>
+                  <span class='badge badge-success'>5/9/2024 4:09:58 PM</span>
+                  <span class='badge badge-danger'>5/9/2024 4:10:01 PM</span>
+                  <span class='badge badge-default'>3503.47 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+                              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1498.41</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="26">LoginPage</div>
+                      </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+              
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:10 PM</td>
+        <td>
+standard_userData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-10-00.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-10-00.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:10 PM</td>
+        <td>
+secret_sauceData Entered Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-10-01.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-10-01.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:10 PM</td>
+        <td>
+Clicked Successfully          
+  <div class="row mb-3">
+   <div class="col-md-3">
+         <img data-featherlight='C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-10-01.png' src="C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images2024-05-09-16-10-01.png">
+      </div>
+ </div>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+                      </div>
+        </div>
+              </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginWith_ValidUser_ValidPassword_TC001</p>
+            <p class="text-sm">
+              <span>4:10:01 PM</span> / <span>0 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">LoginWith_ValidUser_ValidPassword_TC001</h5>
+                  <span class='badge badge-success'>5/9/2024 4:10:01 PM</span>
+                  <span class='badge badge-danger'>5/9/2024 4:10:01 PM</span>
+                  <span class='badge badge-default'>0 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+                              </div>
+            </div>
+
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+                    
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>5/9/2024 4:08:22 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>5/9/2024 4:10:02 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Tests Passed</p>
+          <h3>11</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Tests Failed</p>
+          <h3>0</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Tests</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='1%'>
+            <b>11</b> tests passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='0%'><b>0</b> tests failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Steps</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='child-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='1%'><b>16</b> steps passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>0</b> steps failed, 
+            <b>0</b> skipped, <b data-tooltip='%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+            <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Log events</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='events-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='1%'><b>42</b> events passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>0</b> events failed, 
+            <b data-tooltip='%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "AddToCartMultipleItem_TC006":11336.1322,"AddToCartSingleItem_TC005":11476.6961,"CheckOutItem_TC007":15317.2964,"LoginWith_AllValidUser_ValidPassword_TC004":3532.4626,"LoginWith_AllValidUser_ValidPassword_TC004":8734.878,"LoginWith_AllValidUser_ValidPassword_TC004":12796.5272,"LoginWith_AllValidUser_ValidPassword_TC004":7766.4183,"LoginWith_InvalidUser_InvalidPassword_TC003":4473.1029,"LoginWith_InvalidUser_ValidPassword_TC002":8984.2291,"LoginWith_ValidUser_ValidPassword_TC001":3503.4697,"LoginWith_ValidUser_ValidPassword_TC001":0 };
+  </script>
+  <div class="row">
+              </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 11,
+    childCount: 16,
+    grandChildCount: 0,
+    eventsCount: 42,
+
+passParent:11,failParent:0,warningParent:0,skipParent:0,    
+passChild:16,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:0,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:42,failEvents:0,warningEvents:0,skipEvents:0,infoEvents:0,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>

@@ -20,7 +20,7 @@ namespace AutomationFrameworkProject
         {
             step = Test.CreateNode("LoginPage");
             openUrl(url);
-            // usernameTxt.SendKeys(username);
+           
             Write(usernameTxt, username);
             Write(passwordTxt, password);
             Click(loginBtn);

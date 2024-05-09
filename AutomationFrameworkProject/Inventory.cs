@@ -20,15 +20,13 @@ namespace AutomationFrameworkProject
         public void AddToCart(string itemName)
         {
             step = Test.CreateNode("Inventory Page");
-            CorePage.driver.FindElement(By.XPath($"//button[@id='add-to-cart-{itemName}']")).Click();
-            //driver.FindElement(By.Id($"add-to-cart-{itemName}")).Click();
+            Click(By.XPath($"//button[@id='add-to-cart-{itemName}']"));
         }
 
         public void RemoveFromCart(string itemName)
         {
             step = Test.CreateNode("Inventory Page");
-            CorePage.driver.FindElement(By.XPath($"//button[@id='remove-{itemName}']")).Click();
-            //driver.FindElement(By.Id($"remove-{itemName}")).Click();
+            Click(By.XPath($"//button[@id='remove-{itemName}']"));
         }
     }
 }
