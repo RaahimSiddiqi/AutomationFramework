@@ -138,6 +138,7 @@
     <Compile Include="CorePage.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebApp\HamburgerMenu\HamburgerMenu.cs" />
     <Compile Include="WebApp\Inventory\Inventory.cs" />
     <Compile Include="WebApp\LoginPage\LoginPage.cs" />
   </ItemGroup>

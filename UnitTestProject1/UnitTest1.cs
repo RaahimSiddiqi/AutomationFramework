@@ -5,6 +5,7 @@ using OpenQA.Selenium.Chrome;
 using System;
 using System.Configuration;
 using UnitTestProject1.Inventory;
+using UnitTestProject1.WebApp.HamburgerMenu;
 using UnitTestProject1.WebApp.LoginPage;
 //TestExecution.cs
 namespace AutomationFrameworkProject
@@ -28,7 +29,7 @@ namespace AutomationFrameworkProject
         [AssemblyInitialize()]
         public static void AssemblyInit(TestContext context)
         {
-            string ResultFile = @"C:/UnitTestProject1/UnitTestProject1" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".html";
+            string ResultFile = @"C:\UnitTestProject1\UnitTestProject1\Report\Report" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".html";
             CreateReport(ResultFile);
         }
         [AssemblyCleanup()]
@@ -41,8 +42,9 @@ namespace AutomationFrameworkProject
         public void TestInit()
         {
             CorePage.SeleniumInit(ConfigurationManager.AppSettings["Browser"].ToString());
-            Test = extentreports.CreateTest(TestContext.TestName);
             //CorePage.SeleniumInit("Chrome");
+            Test = extentreports.CreateTest(TestContext.TestName);
+
 
 
         }
@@ -55,6 +57,7 @@ namespace AutomationFrameworkProject
 
         LoginPage loginPage = new LoginPage();
         InventoryPage inventoryPage = new InventoryPage();
+        HamburgerMenu hamburgermenu = new HamburgerMenu();
         [TestMethod]
         [TestCategory("Login")][TestCategory("Positive")]
         public void LoginWith_ValidUser_ValidPassword_TC001()
@@ -129,7 +132,6 @@ namespace AutomationFrameworkProject
         [TestCategory("AddtoCart")]
         public void AddToCartMultipleItem_TC005()
         {
-
             loginPage.Login("https://www.saucedemo.com/", "standard_user", "secret_sauce");
             string title = CorePage.driver.FindElement(By.XPath("//div[@class='header_secondary_container']/span[@class='title']")).Text;
             Assert.AreEqual(title, "Products");
@@ -145,6 +147,40 @@ namespace AutomationFrameworkProject
 
             // Wait for a few seconds
             System.Threading.Thread.Sleep(3000);
+        }
+        [TestMethod]
+        [TestCategory("HamburgerMenu")]
+        public void HamburgerMenu_TC006()
+        {
+            loginPage.Login("https://www.saucedemo.com/", "standard_user", "secret_sauce");
+            string title = CorePage.driver.FindElement(By.XPath("//div[@class='header_secondary_container']/span[@class='title']")).Text;
+            Assert.AreEqual(title, "Products");
+            System.Threading.Thread.Sleep(3000);
+            hamburgermenu.ClickHamburgerMenu();
+            System.Threading.Thread.Sleep(3000);
+            hamburgermenu.ClickLogout();
+            System.Threading.Thread.Sleep(3000);
+        }
+        [TestMethod]
+        [TestCategory("HamburgerMenu")]
+        [TestCategory("Positive")]
+        public void HamburgerMenuStateCheck_TC007()
+        {
+            loginPage.Login("https://www.saucedemo.com/", "standard_user","secret_sauce");
+            string title = CorePage.driver.FindElement(By.XPath("//div[@class='header_secondary_container']/span[@class='title']")).Text;
+            Assert.AreEqual(title, "Products");
+            inventoryPage.AddToCart("sauce-labs-backpack");
+            System.Threading.Thread.Sleep(3000);
+            hamburgermenu.ClickHamburgerMenu();
+            System.Threading.Thread.Sleep(3000);
+            hamburgermenu.ClickLogout();
+            System.Threading.Thread.Sleep(3000);
+            loginPage.Login("https://www.saucedemo.com/", "standard_user", "secret_sauce");
+            Assert.AreEqual(title, "Products");
+            inventoryPage.RemoveFromCart("sauce-labs-backpack");
+            hamburgermenu.ClickHamburgerMenu();
+            System.Threading.Thread.Sleep(3000);
+            hamburgermenu.ClickLogout();
         }
 
 
