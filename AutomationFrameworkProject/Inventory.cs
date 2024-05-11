@@ -10,13 +10,6 @@ namespace AutomationFrameworkProject
 {
     public class InventoryPage : CorePage
     {
-        private IWebDriver driver;
-
-        public void NavigateToInventoryPage()
-        {
-            // Implement logic to navigate to the inventory page if needed
-        }
-
         public void AddToCart(string itemName)
         {
             step = Test.CreateNode("Inventory Page");

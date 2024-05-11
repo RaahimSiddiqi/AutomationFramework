@@ -98,7 +98,7 @@ namespace AutomationFrameworkProject
 
         public static void TakeScreenshot(Status status, string stepDetails)
         {
-            string path = @"C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".png";
+            string path = @"C:\Users\RaahimSiddiqi\Desktop\FAST\SEM8\Software Testing\AutomationFrameworkProject\AutomationFrameworkProject\AutomationFrameworkProject\images\" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".png";
             Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();
             File.WriteAllBytes(path, screenshot.AsByteArray);
             step.Log(status, stepDetails, MediaEntityBuilder.CreateScreenCaptureFromPath(path).Build());

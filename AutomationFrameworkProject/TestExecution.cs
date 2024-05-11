@@ -58,6 +58,7 @@ namespace AutomationFrameworkProject
         Checkout checkout = new Checkout();
         LoginPage loginPage = new LoginPage();
         InventoryPage inventoryPage = new InventoryPage();
+        HamburgerMenu hamburgermenu = new HamburgerMenu();
         [TestMethod]
         [TestCategory("Login")]
         [TestCategory("Positive")]
@@ -169,5 +170,48 @@ namespace AutomationFrameworkProject
             checkout.CompleteCheckout();
             Thread.Sleep(1000);
         }
+
+        [TestMethod]
+        [TestCategory("HamburgerMenu")]
+        public void HamburgerMenu_TC008()
+        {
+            loginPage.Login("https://www.saucedemo.com/", "standard_user", "secret_sauce");
+            string title = CorePage.driver.FindElement(By.XPath("//div[@class='header_secondary_container']/span[@class='title']")).Text;
+            Assert.AreEqual(title, "Products");
+            System.Threading.Thread.Sleep(1000);
+
+            hamburgermenu.ClickHamburgerMenu();
+            System.Threading.Thread.Sleep(1000);
+
+            hamburgermenu.ClickLogout();
+            System.Threading.Thread.Sleep(1000);
+        }
+
+        [TestMethod]
+        [TestCategory("HamburgerMenu")]
+        [TestCategory("Positive")]
+        public void HamburgerMenuStateCheck_TC009()
+        {
+            loginPage.Login("https://www.saucedemo.com/", "standard_user", "secret_sauce");
+            string title = CorePage.driver.FindElement(By.XPath("//div[@class='header_secondary_container']/span[@class='title']")).Text;
+            Assert.AreEqual(title, "Products");
+            inventoryPage.AddToCart("sauce-labs-backpack");
+            System.Threading.Thread.Sleep(1000);
+
+            hamburgermenu.ClickHamburgerMenu();
+            System.Threading.Thread.Sleep(1000);
+
+            hamburgermenu.ClickLogout();
+            System.Threading.Thread.Sleep(1000);
+
+            loginPage.Login("https://www.saucedemo.com/", "standard_user", "secret_sauce");
+            Assert.AreEqual(title, "Products");
+            inventoryPage.RemoveFromCart("sauce-labs-backpack");
+            hamburgermenu.ClickHamburgerMenu();
+            System.Threading.Thread.Sleep(1000);
+
+            hamburgermenu.ClickLogout();
+        }
+
     }
 }

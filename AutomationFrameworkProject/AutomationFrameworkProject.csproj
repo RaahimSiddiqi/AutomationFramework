@@ -137,6 +137,7 @@
   <ItemGroup>
     <Compile Include="Checkout.cs" />
     <Compile Include="CorePage.cs" />
+    <Compile Include="HamburgerMenu.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="LoginPage.cs" />
     <Compile Include="TestExecution.cs" />
